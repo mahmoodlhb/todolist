@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <p>task name: {{cartTaskItem.taskName}}</p>
+        <p style="color: red">status: {{cartTaskItem.state}}</p>
+      </div>
+      <div class="col">
+        <p >date time: {{cartTaskItem.dateTime.toString()}}</p>
+        <p >time left: {{cartTaskItem.timeLeft}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button (click)="editeTask(cartTaskItem)">Edit Task</button>
+      </div>
+      <div class="col">
+        <button (click)="deleteTask(cartTaskItem)">Delete Task</button>
+      </div>
+      <div class="col">
+        <button (click)="changeStatus(cartTaskItem)">Change state</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
